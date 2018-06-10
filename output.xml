@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180610 11:08:42.251" generator="Robot 3.0.2 (Python 2.7.15 on darwin)">
+<suite source="/Users/benzintel/robot/example.robot" id="s1" name="Example">
+<test id="s1-t1" name="Open Browser To Test Project">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180610 11:08:42.366" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'</msg>
+<status status="PASS" endtime="20180610 11:08:45.918" starttime="20180610 11:08:42.365"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20180610 11:08:45.919" starttime="20180610 11:08:45.919"></status>
+</kw>
+<status status="PASS" endtime="20180610 11:08:45.920" critical="yes" starttime="20180610 11:08:42.365"></status>
+</test>
+<test id="s1-t2" name="Test Search Google">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>q</arg>
+<arg>robot framework</arg>
+</arguments>
+<msg timestamp="20180610 11:08:45.921" level="INFO">Typing text 'robot framework' into text field 'q'</msg>
+<status status="PASS" endtime="20180610 11:08:49.167" starttime="20180610 11:08:45.921"></status>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by `locator`.</doc>
+<msg timestamp="20180610 11:08:49.168" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" endtime="20180610 11:08:53.271" starttime="20180610 11:08:49.167"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180610 11:08:54.335" starttime="20180610 11:08:53.272"></status>
+</kw>
+<status status="PASS" endtime="20180610 11:08:54.335" critical="yes" starttime="20180610 11:08:45.920"></status>
+</test>
+<status status="PASS" endtime="20180610 11:08:54.336" starttime="20180610 11:08:42.257"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Example" pass="2">Example</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
