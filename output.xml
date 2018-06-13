@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180610 11:08:42.251" generator="Robot 3.0.2 (Python 2.7.15 on darwin)">
+<robot generated="20180612 17:51:27.036" generator="Robot 3.0.2 (Python 2.7.15 on darwin)">
 <suite source="/Users/benzintel/robot/example.robot" id="s1" name="Example">
 <test id="s1-t1" name="Open Browser To Test Project">
 <kw name="Open Browser" library="Selenium2Library">
@@ -8,17 +8,17 @@
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20180610 11:08:42.366" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'</msg>
-<status status="PASS" endtime="20180610 11:08:45.918" starttime="20180610 11:08:42.365"></status>
+<msg timestamp="20180612 17:51:27.223" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'</msg>
+<status status="PASS" endtime="20180612 17:51:29.537" starttime="20180612 17:51:27.223"></status>
 </kw>
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<status status="PASS" endtime="20180610 11:08:45.919" starttime="20180610 11:08:45.919"></status>
+<status status="PASS" endtime="20180612 17:51:29.538" starttime="20180612 17:51:29.538"></status>
 </kw>
-<status status="PASS" endtime="20180610 11:08:45.920" critical="yes" starttime="20180610 11:08:42.365"></status>
+<status status="PASS" endtime="20180612 17:51:29.539" critical="yes" starttime="20180612 17:51:27.222"></status>
 </test>
 <test id="s1-t2" name="Test Search Google">
 <kw name="Input Text" library="Selenium2Library">
@@ -27,21 +27,21 @@
 <arg>q</arg>
 <arg>robot framework</arg>
 </arguments>
-<msg timestamp="20180610 11:08:45.921" level="INFO">Typing text 'robot framework' into text field 'q'</msg>
-<status status="PASS" endtime="20180610 11:08:49.167" starttime="20180610 11:08:45.921"></status>
+<msg timestamp="20180612 17:51:29.542" level="INFO">Typing text 'robot framework' into text field 'q'</msg>
+<status status="PASS" endtime="20180612 17:51:32.708" starttime="20180612 17:51:29.542"></status>
 </kw>
 <kw name="Submit Form" library="Selenium2Library">
 <doc>Submits a form identified by `locator`.</doc>
-<msg timestamp="20180610 11:08:49.168" level="INFO">Submitting form 'None'.</msg>
-<status status="PASS" endtime="20180610 11:08:53.271" starttime="20180610 11:08:49.167"></status>
+<msg timestamp="20180612 17:51:32.709" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" endtime="20180612 17:51:36.967" starttime="20180612 17:51:32.709"></status>
 </kw>
 <kw type="teardown" name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20180610 11:08:54.335" starttime="20180610 11:08:53.272"></status>
+<status status="PASS" endtime="20180612 17:51:38.033" starttime="20180612 17:51:36.968"></status>
 </kw>
-<status status="PASS" endtime="20180610 11:08:54.335" critical="yes" starttime="20180610 11:08:45.920"></status>
+<status status="PASS" endtime="20180612 17:51:38.034" critical="yes" starttime="20180612 17:51:29.541"></status>
 </test>
-<status status="PASS" endtime="20180610 11:08:54.336" starttime="20180610 11:08:42.257"></status>
+<status status="PASS" endtime="20180612 17:51:38.036" starttime="20180612 17:51:27.038"></status>
 </suite>
 <statistics>
 <total>
